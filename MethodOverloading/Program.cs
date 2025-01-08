@@ -67,12 +67,24 @@
         static void Main(string[] args)
         // The entry point of the program.
         // 'static' means the method belongs to the class itself.
-        // 'void' indicates the method dose not return a value.
+        // 'void' indicates the method doesn't  return a value.
         // 'Main' is the methods name, and it is the starting point when the progam runs.
         // 'string[] args' is an array of strings that can hold command line arguments.
         {
+            Console.WriteLine(Add(1, 1));
+            // 1.'Console.WriteLine' is a method used to output a result to the console.
+            // this one we are looking at right here will display the result of the add method when called like I am doing rn.
+            // '(Add(numOne1, numTwo1)' calls the Add method with two int arguments.
+            // This Add methos will add the two int and return the sum, which is then printed to the console.
+            // 'Add(numOne: 1, numTwo: 1)' passes 1 and 1 as arguments, returning the sum of 2.
+            
+            Console.WriteLine(Add(1.0m, 1.0m));
+            // 2. This method will call out the result with two decimal argument that I declared as (1.0m and 1.0m).
+            // and displays the sum.
+            
+            
             Console.WriteLine(Add(numOne:1, numTwo:1, isCurrenncy: false));
-            // 'Console.WriteLine' outputs the result of the 'Add' method to the console.
+            // 3. 'Console.WriteLine' outputs the result of the 'Add' method to the console.
             // 'numOne: 1, numTwo: 1, isCurrenncy: False' are named arguments passed to the methods
         }
     }
